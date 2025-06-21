@@ -7,7 +7,7 @@
 </head>
 <body>
     <a href="design.php">Trang chu</a>
-    
+
     <h1>Danh sach thiet bi van phong - May huy tai lieu</h1>
 
     <?php
@@ -22,6 +22,7 @@
                 <th>Ten hang</th>
                 <th>Hang san xuat</th>
                 <th>Gia</th>
+                <th>Thao tac</th>
             </tr>";
             
     if ($result->num_rows > 0) {        
@@ -32,6 +33,10 @@
                 <td>" . $row['ten_hang'] . "</td>
                 <td>" . $row['hang_sx'] . "</td>
                 <td>" . $row['gia'] . "</td>
+                <td>
+                    <a href='action/update.php?ma_hang=" . $row['ma_hang'] . "'>Sua</a> |
+                    <a href='action/delete.php?ma_hang=" . $row['ma_hang'] . "'>Xoa</a>
+                </td>
             </tr>";
         }
     } else {
