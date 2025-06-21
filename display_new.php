@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hien thi</title>
 </head>
+
+<!--SAU KHI TAI VE, HAY DOI TEN THANH display.php-->
+    
 <body>
     <a href="design.php">Trang chu</a>
 
